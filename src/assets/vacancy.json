@@ -1,0 +1,171 @@
+[{
+  "id": 1,
+  "title": "Vacancy 1",
+  "salary": {
+    "value": 20000,
+    "currencies": [
+      {
+        "label": "USD",
+        "coefficient": 1.5
+      },
+      {
+        "label": "RUB",
+        "coefficient": 1
+      }
+    ]
+  }
+},
+  {
+    "id": 2,
+    "title": "Vacancy 2",
+    "salary": {
+      "value": 33333,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Vacancy 3",
+    "salary": {
+      "value": 4543,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "Vacancy 4",
+    "salary": {
+      "value": 1231,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "Vacancy 5",
+    "salary": {
+      "value": 1063000,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "Vacancy 6",
+    "salary": {
+      "value": 231,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "Vacancy 7",
+    "salary": {
+      "value": 10000,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+  "id": 8,
+  "title": "Vacancy 8",
+  "salary": {
+    "value": 11313123,
+    "currencies": [
+      {
+        "label": "USD",
+        "coefficient": 1.5
+      },
+      {
+        "label": "RUB",
+        "coefficient": 1
+      }
+    ]
+  }
+},
+  {
+    "id": 9,
+    "title": "Vacancy 9",
+    "salary": {
+      "value": 10000,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "Vacancy 10",
+    "salary": {
+      "value": 10000,
+      "currencies": [
+        {
+          "label": "USD",
+          "coefficient": 1.5
+        },
+        {
+          "label": "RUB",
+          "coefficient": 1
+        }
+      ]
+    }
+  }
+]
