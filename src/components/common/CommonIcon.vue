@@ -13,5 +13,7 @@ defineProps<{
 svg {
   width: 12px;
   height: 12px;
+  fill: #ffffff;
+  stroke: #ffffff;
 }
 </style>

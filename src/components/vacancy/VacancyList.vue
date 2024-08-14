@@ -6,6 +6,10 @@ const props = defineProps<{
   vacancyList: IVacancy[]
   currentCurrency?: Currencies
 }>()
+
+defineEmits<{
+  (e: 'hideVacancy', id: number): void
+}>()
 </script>
 
 <template>
@@ -15,6 +19,7 @@ const props = defineProps<{
       :key="vacancy.id"
       :vacancy="vacancy"
       :current-currency="props.currentCurrency"
+      @hide-vacancy="$emit('hideVacancy', $event)"
     />
     <div v-if="!props.vacancyList.length" class="vacancy-list__empty">Не найдено</div>
   </div>

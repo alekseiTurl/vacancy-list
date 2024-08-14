@@ -19,6 +19,10 @@ const currentPrice = computed(() =>
     ? (props.vacancy.salary.value * currentCurrency.value.coefficient).toFixed(2)
     : 'error'
 )
+
+defineEmits<{
+  (e: 'hideVacancy', id: number): void
+}>()
 </script>
 
 <template>
@@ -30,7 +34,7 @@ const currentPrice = computed(() =>
         <span class="vacancy-item__salary-currency">{{ currentCurrency?.label }}</span>
       </div>
     </div>
-    <button class="vacancy-item__hide-btn">
+    <button class="vacancy-item__hide-btn" @click="$emit('hideVacancy', props.vacancy.id)">
       <common-icon icon-name="close" />
     </button>
   </div>

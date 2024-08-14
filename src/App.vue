@@ -83,6 +83,17 @@ const setRange = (value: Range) => {
     clearTimeout(timeout)
   }, 200)
 }
+
+const hiddenVacancies = ref(new Set<number>())
+
+const hideVacancy = (id: number) => {
+  hiddenVacancies.value.add(id)
+  vacancyListData.value = data.filter((vacancy) => !hiddenVacancies.value.has(vacancy.id))
+}
+const showHiddenVacancies = () => {
+  hiddenVacancies.value.clear()
+  vacancyListData.value = data
+}
 </script>
 
 <template>
@@ -97,7 +108,11 @@ const setRange = (value: Range) => {
       :vacancy-list="vacancyListData"
       :current-currency="currentCurrency"
       :class="{ pending: loading }"
+      @hide-vacancy="hideVacancy($event)"
     />
+    <button class="main__btn" @click="showHiddenVacancies">
+      {{ `Show hidden vacancies(${hiddenVacancies.size})` }}
+    </button>
     <app-loader v-if="loading" />
   </main>
 </template>
@@ -110,6 +125,11 @@ const setRange = (value: Range) => {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
 }
 .pending {
   pointer-events: none;
